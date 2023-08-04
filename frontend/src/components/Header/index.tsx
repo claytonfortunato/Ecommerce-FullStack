@@ -1,8 +1,6 @@
-import React from "react";
-
 export const Header = () => {
   return (
-    <div>
+    <div className="flex bg-black">
       <div>Ecommerce API</div>
       <div>
         <input type="text" />
