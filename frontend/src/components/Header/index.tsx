@@ -3,6 +3,7 @@ export const Header = () => {
     <div className="flex bg-black">
       <div>Ecommerce API</div>
       <div>
+        <label htmlFor="">Pesquisa</label>
         <input type="text" />
       </div>
       <div>
