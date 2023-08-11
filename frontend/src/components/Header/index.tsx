@@ -1,6 +1,6 @@
 export const Header = () => {
   return (
-    <div className="flex bg-black">
+    <div className="flex-1  ">
       <div>Ecommerce API</div>
       <div>
         <label htmlFor="">Pesquisa</label>
