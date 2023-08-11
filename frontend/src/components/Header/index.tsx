@@ -1,10 +1,10 @@
 export const Header = () => {
   return (
-    <div className="flex-1  ">
+    <div className="flex ">
       <div>Ecommerce API</div>
       <div>
         <label htmlFor="">Pesquisa</label>
-        <input type="text" />
+        <input type="text" className="border-[]" />
       </div>
       <div>
         <span>Cart</span>
