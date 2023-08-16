@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 
-const connectToDB = require("./config/db");
+const connectToDB = require("./src/config/db");
 
 const app = express();
 app.use(
@@ -11,6 +11,9 @@ app.use(
     origin: ["http://localhost:3000"],
   })
 );
+
+//All Routes
+app.use("/api/products", require("./src/routes/productRouter"));
 
 const port = 8000;
 app.listen(port, () => {
