@@ -38,7 +38,7 @@ export const sampleProducts = [
   {
     name: "Nike Slim Shirt",
     slug: "nike-slim-shirt",
-    image: "",
+    image: "../assets/image/camisa-white-nike.jpg",
     category: "Shirts",
     brand: "Nike",
     price: 1200,
@@ -50,7 +50,7 @@ export const sampleProducts = [
   {
     name: "Adidas Fit Shirt",
     slug: "adidas-slim-shirt",
-    image: "",
+    image: "../assets/image/camisa-black-adid.jpg",
     category: "Shirts",
     brand: "Adidas",
     price: 1500,
@@ -62,7 +62,7 @@ export const sampleProducts = [
   {
     name: "Puma Fit Pant",
     slug: "puma-slim-pant",
-    image: "",
+    image: "../assets/image/pants-puma.jpg",
     category: "Pants",
     brand: "Puma",
     price: 2100,
@@ -74,7 +74,19 @@ export const sampleProducts = [
   {
     name: "Nike Slim Pant",
     slug: "nike-slim-Pant",
-    image: "",
+    image: "../assets/image/pants-black-nik.jpg",
+    category: "Pants",
+    brand: "Nike",
+    price: 3400,
+    countInStock: 15,
+    description: "high quality pants",
+    rating: 4.3,
+    numReviews: 14,
+  },
+  {
+    name: "Nike Slim Pant Gray",
+    slug: "nike-slim-Pant",
+    image: "../assets/image/pants-gray-nik.jpg",
     category: "Pants",
     brand: "Nike",
     price: 3400,
