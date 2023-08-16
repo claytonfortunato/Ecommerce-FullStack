@@ -11,7 +11,7 @@ export const Home = () => {
   return (
     <div className="">
       <div>
-        <h1 className="text-4xl flex justify-center">Products</h1>
+        <h1 className="text-4xl flex justify-center font-sans">Products</h1>
       </div>
     </div>
   );
