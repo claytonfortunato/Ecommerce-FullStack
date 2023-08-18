@@ -2,7 +2,9 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 
-const connectToDB = require("./src/config/db");
+const connectToDB = require("./config/db");
+
+const products = require("./data/Products");
 
 const app = express();
 app.use(
@@ -13,7 +15,10 @@ app.use(
 );
 
 //All Routes
-app.use("/api/products", require("./src/routes/productRouter"));
+app.use("/api/", require("./routes/productRouter"));
+app.get("/api/products", (req, res) => {
+  res.json(products);
+});
 
 const port = 8000;
 app.listen(port, () => {
