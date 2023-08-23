@@ -8,7 +8,6 @@ export const Home = () => {
   useEffect(() => {
     api.get("/api/product").then((resp) => {
       setProduct(resp.data);
-      console.log(resp.data);
     });
   }, []);
 
@@ -17,14 +16,14 @@ export const Home = () => {
       <div>
         <h1 className=" text-4xl flex justify-center font-sans">Products</h1>
 
-        <div>
+        {/* <div>
           {product.map((product) => (
             <div>
               <h1>{product.name}</h1>
               <img src={product.image} alt="" />
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
