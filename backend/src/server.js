@@ -1,8 +1,6 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const productRouter = require("./routes/productRouter");
-const seedRouter = require("./routes/seedRouter");
 
 const connectToDB = require("./config/db");
 
@@ -15,8 +13,7 @@ app.use(
 );
 
 //All Routes
-app.use("/api/products", productRouter);
-app.use("/api/seed", seedRouter);
+app.use("/", require("./routes/productRouter"));
 
 const port = 8000;
 app.listen(port, () => {

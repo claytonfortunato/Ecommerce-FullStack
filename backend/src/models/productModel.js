@@ -8,7 +8,7 @@ const ProductSchema = new mongoose.Schema({
   slug: {
     type: String,
     required: true,
-    unique: true,
+    lowercase: true,
   },
   image: {
     type: String,
@@ -19,8 +19,8 @@ const ProductSchema = new mongoose.Schema({
     required: true,
   },
   category: {
-    type: String,
-    required: true,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Category",
   },
   description: {
     type: String,
