@@ -3,7 +3,7 @@ import moon from "../../assets/icon/moon.svg";
 
 export const Header = () => {
   return (
-    <div className="w-full h-14 flex justify-around items-center  bg-slate-600 ">
+    <div className=" w-full h-14 flex justify-around items-center  dark:bg-slate-600 ">
       <div className="text-3xl font-bold text-white">Ecommerce API</div>
       <div className="h-8 flex items-center bg-orange-400 rounded-sm">
         <input
@@ -18,12 +18,12 @@ export const Header = () => {
         <img
           src={moon}
           alt=""
-          className="mr-3 hover:bg-gray-400 duration-200 p-1 cursor-pointer rounded-md"
+          className=" mr-3 hover:bg-gray-400 duration-200 p-1 cursor-pointer rounded-md"
         />
-        <span className="mr-3 text-white cursor-pointer hover:bg-gray-400 duration-200 p-1 rounded-md">
+        <span className="mr-3 text-black cursor-pointer hover:bg-gray-400 duration-200 p-1 rounded-md">
           Cart
         </span>
-        <span className="text-white cursor-pointer hover:bg-gray-400 duration-200 p-1 rounded-md">
+        <span className="text-black cursor-pointer hover:bg-gray-400 duration-200 p-1 rounded-md">
           Sign In
         </span>
       </div>

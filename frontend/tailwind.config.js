@@ -6,5 +6,6 @@ export default {
       sans: ["Poppins", "sans-serif"],
     },
   },
+  darkMode: ["class", '[data-mode="dark"]'],
   plugins: [],
 };
