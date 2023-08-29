@@ -1,5 +1,4 @@
 const ProductModel = require("../models/productModel");
-const products = require("../data/Products");
 
 const getProduct = async (req, res) => {
   try {
