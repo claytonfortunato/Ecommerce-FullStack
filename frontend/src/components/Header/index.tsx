@@ -3,7 +3,7 @@ import moon from "../../assets/icon/moon.svg";
 
 export const Header = () => {
   return (
-    <div className=" w-full h-14 flex justify-around items-center  dark:bg-slate-600 ">
+    <div className="dark:bg-slate-600 w-full h-14 flex justify-around items-center  dark:bg-slate-600 ">
       <div className="text-3xl font-bold text-white">Ecommerce API</div>
       <div className="h-8 flex items-center bg-orange-400 rounded-sm">
         <input
