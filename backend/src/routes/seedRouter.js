@@ -3,7 +3,7 @@ const asyncHandler = require("express-async-handler");
 const { sampleProducts } = require("../data/Products");
 const { ProductModel } = require("../models/productModel");
 
-export const seedRouter = express.Router();
+const seedRouter = express.Router();
 
 seedRouter.get(
   "/",
