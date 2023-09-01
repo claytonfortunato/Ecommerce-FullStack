@@ -4,8 +4,12 @@ import App from "./App.tsx";
 
 import "./style.css";
 
+import ThemeContextProvider from "./hooks/useTheme.tsx";
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
+    <ThemeContextProvider>
+      <App />
+    </ThemeContextProvider>
   </React.StrictMode>
 );
