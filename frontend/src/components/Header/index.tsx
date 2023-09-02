@@ -1,9 +1,12 @@
 import { MagnifyingGlass } from "@phosphor-icons/react";
 import moon from "../../assets/icon/moon.svg";
+import { useTheme } from "../../hooks/useTheme";
 
 export const Header = () => {
+  const { theme, setTheme } = useTheme();
+
   return (
-    <div className="dark:bg-slate-600 w-full h-14 flex justify-around items-center  dark:bg-slate-600 ">
+    <div className="bg-white w-full h-14 flex justify-around items-center  dark:bg-slate-600 ">
       <div className="text-3xl font-bold text-white">Ecommerce API</div>
       <div className="h-8 flex items-center bg-orange-400 rounded-sm">
         <input
@@ -12,13 +15,14 @@ export const Header = () => {
           placeholder="Pesquisar produto"
           className="w-80 border-black border p-1 focus:outline-none"
         />
-        <MagnifyingGlass size={24} className="m-2 cursor-pointer" />
+        <MagnifyingGlass size={24} className=" m-2 cursor-pointer" />
       </div>
       <div className="flex">
         <img
           src={moon}
           alt=""
-          className=" mr-3 hover:bg-gray-400 duration-200 p-1 cursor-pointer rounded-md"
+          className="text-black mr-3 hover:bg-gray-400 duration-200 p-1 cursor-pointer rounded-md"
+          onClick={() => setTheme("dark")}
         />
         <span className="mr-3 text-black cursor-pointer hover:bg-gray-400 duration-200 p-1 rounded-md">
           Cart

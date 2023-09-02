@@ -1,15 +1,15 @@
-import { useEffect, useState } from "react";
-import { api } from "../../service/api";
-import { Product } from "../../interface/product";
+// import { useEffect, useState } from "react";
+// import { api } from "../../service/api";
+// import { Product } from "../../interface/product";
 
 export const Home = () => {
-  const [product, setProduct] = useState<Product[]>([]);
+  // const [product, setProduct] = useState<Product[]>([]);
 
-  useEffect(() => {
-    api.get("/api/product").then((resp) => {
-      setProduct(resp.data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   api.get("/api/product").then((resp) => {
+  //     setProduct(resp.data);
+  //   });
+  // }, []);
 
   return (
     <div className="">
