@@ -8,7 +8,7 @@ export const Header = () => {
 
   return (
     <div className="bg-white w-full h-14 flex justify-around items-center  dark:bg-slate-600">
-      <div className="text-black text-3xl font-bold">Ecommerce API</div>
+      <div className="text-black text-3xl font-bold dark:text-white">Ecommerce API</div>
       <div className="h-8 flex items-center bg-orange-400 rounded-sm">
         <input
           type="text"
@@ -18,19 +18,19 @@ export const Header = () => {
         />
         <MagnifyingGlass size={24} className=" m-2 cursor-pointer" />
       </div>
-      <div className="flex">
+      <div className="flex gap-4">
        {theme === 'light' ? ( <img
           src={moon}
           alt=""
-          className="text-black mr-3 hover:bg-gray-400 duration-200 p-1 cursor-pointer rounded-md"
+          className=" text-black hover:bg-gray-400 duration-200 p-1 cursor-pointer rounded-md"
           onClick={() => setTheme("dark")}
         />):(
-          <img src={Sun} alt="" className="text-black mr-3 hover:bg-gray-400 duration-200 p-1 cursor-pointer rounded-md" onClick={() => setTheme("light")}  />
+          <img src={Sun} alt="" className="text-black hover:bg-gray-400 duration-200 p-1 cursor-pointer rounded-md dark:bg-white" onClick={() => setTheme("light")}  />
         )}
-        <span className="mr-3 text-black cursor-pointer hover:bg-gray-400 duration-200 p-1 rounded-md dark:text-white">
+        <span className=" text-black cursor-pointer hover:bg-gray-400 duration-200 p-1 rounded-md dark:text-white">
           Cart
         </span>
-        <span className="text-black cursor-pointer hover:bg-gray-400 duration-200 p-1 rounded-md">
+        <span className="text-black cursor-pointer hover:bg-gray-400 duration-200 p-1 rounded-md dark:text-white">
           Sign In
         </span>
       </div>
