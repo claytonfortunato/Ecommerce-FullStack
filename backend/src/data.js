@@ -1,4 +1,4 @@
-const sampleProducts = [
+export const sampleProducts = [
   {
     name: "Tênis Nike Revolution 5 Max",
     slug: "nike-slim-shirt",
