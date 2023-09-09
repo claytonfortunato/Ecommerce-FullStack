@@ -1,29 +1,28 @@
-// import { useEffect, useState } from "react";
-// import { api } from "../../service/api";
-// import { Product } from "../../interface/product";
+import { useEffect, useState } from "react";
+
+
+import { Product } from "../../interface/product";
+import  sampleProducts  from "../../db/product";
 
 export const Home = () => {
-  // const [product, setProduct] = useState<Product[]>([]);
+  const [product, setProduct] = useState<Product[]>([]);
 
-  // useEffect(() => {
-  //   api.get("/api/product").then((resp) => {
-  //     setProduct(resp.data);
-  //   });
-  // }, []);
+
 
   return (
-    <div className="dark:bg-slate-600">
+    <div className="flex justify-center dark:bg-slate-600">
       <div>
         <h1 className=" text-4xl flex justify-center font-sans dark:text-white">Products</h1>
 
-        {/* <div>
-          {product.map((product) => (
-            <div>
+        <div className="flex flex-wrap">
+          {sampleProducts.map((product) => (
+            <div className="flex flex-col m-2">
               <h1>{product.name}</h1>
               <img src={product.image} alt="" />
+              <span>{product.price}</span>
             </div>
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   );

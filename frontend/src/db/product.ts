@@ -1,4 +1,6 @@
-export const sampleProducts = [
+import { Product } from "../interface/product";
+
+const sampleProducts: Product[] = [
     {
       name: "Tênis Nike Revolution 5 Max",
       slug: "nike-slim-shirt",
@@ -97,3 +99,4 @@ export const sampleProducts = [
     },
   ];
   
+export default sampleProducts
