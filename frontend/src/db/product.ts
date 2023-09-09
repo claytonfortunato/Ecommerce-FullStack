@@ -52,7 +52,7 @@ const sampleProducts: Product[] = [
     {
       name: "Adidas Fit Shirt",
       slug: "adidas-slim-shirt",
-      image: "../assets/image/camisa-black-adid.jpg",
+      image: "../src/assets/image/camisa-black-adid.jpg",
       category: "Shirts",
       brand: "Adidas",
       price: 1500,
@@ -64,7 +64,7 @@ const sampleProducts: Product[] = [
     {
       name: "Puma Fit Pant",
       slug: "puma-slim-pant",
-      image: "../assets/image/pants-puma.jpg",
+      image: "../src/assets/image/pants-puma.jpg",
       category: "Pants",
       brand: "Puma",
       price: 2100,
@@ -76,7 +76,7 @@ const sampleProducts: Product[] = [
     {
       name: "Nike Slim Pant",
       slug: "nike-slim-Pant",
-      image: "../assets/image/pants-black-nik.jpg",
+      image: "../src/assets/image/pants-black-nik.jpg",
       category: "Pants",
       brand: "Nike",
       price: 3400,
@@ -88,7 +88,7 @@ const sampleProducts: Product[] = [
     {
       name: "Nike Slim Pant Gray",
       slug: "nike-slim-Pant",
-      image: "../assets/image/pants-gray-nik.jpg",
+      image: "../src/assets/image/pants-gray-nik.jpg",
       category: "Pants",
       brand: "Nike",
       price: 3400,
