@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import { Product } from "../../interface/product";
 import  sampleProducts  from "../../db/product";
+import CardProduct from "../../components/CardProduct";
 
 export const Home = () => {
   const [product, setProduct] = useState<Product[]>([]);
@@ -16,11 +17,8 @@ export const Home = () => {
 
         <div className="flex flex-wrap">
           {sampleProducts.map((product) => (
-            <div className="flex flex-col m-2">
-              <h1>{product.name}</h1>
-              <img src={product.image} alt="" />
-              <span>{product.price}</span>
-            </div>
+         
+            <CardProduct key={product.name} name={product.name} image={product.image} price={product.price}/>
           ))}
         </div>
       </div>
