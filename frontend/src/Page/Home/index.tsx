@@ -14,7 +14,6 @@ export const Home = () => {
   return (
     <div className=" dark:bg-slate-600">
   
-        <h1 className=" text-4xl flex justify-center font-sans dark:text-white">Products</h1>
 
         <div className="flex">
 
