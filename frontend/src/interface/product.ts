@@ -1,10 +1,12 @@
 export interface Product {
-  name: string;
+  title: string;
   slug: string;
   image: string;
   category: string;
+  color:String,
   brand: string;
-  price: number;
+  prevPrice: number;
+  newPrice:number;
   countInStock: number;
   description: string;
   rating: number;

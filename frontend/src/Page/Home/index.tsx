@@ -18,7 +18,7 @@ export const Home = () => {
         <div className="flex flex-wrap">
           {sampleProducts.map((product) => (
          
-            <CardProduct key={product.name} name={product.name} image={product.image} price={product.price}/>
+            <CardProduct key={product.title} title={product.title} image={product.image} price={product.price}/>
           ))}
         </div>
       </div>
