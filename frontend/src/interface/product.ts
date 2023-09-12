@@ -1,3 +1,5 @@
+import {ReactNode} from 'react'
+
 export interface Product {
   title: string;
   slug: string;
@@ -11,4 +13,8 @@ export interface Product {
   description: string;
   rating: number;
   numReviews: number;
+}
+
+export interface ThemeProvider {
+  children:ReactNode;
 }
