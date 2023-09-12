@@ -2,10 +2,7 @@ import moon from "../../assets/icon/moon.svg";
 import Sun from '../../assets/icon/sun-dim.svg'
 import { useTheme } from "../../hooks/useTheme";
 
-interface Props {
-  setTheme: void;
-  theme: void;
-}
+
 
 export const Header = () => {
   const { theme, setTheme } = useTheme();
