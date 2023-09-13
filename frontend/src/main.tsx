@@ -4,7 +4,7 @@ import App from "./App.tsx";
 
 import "./style.css";
 
-import ThemeContextProvider from "./hooks/useTheme.tsx";
+import ThemeContextProvider from "./hooks/useDarkmode.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
