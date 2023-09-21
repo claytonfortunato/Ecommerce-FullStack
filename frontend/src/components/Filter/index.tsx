@@ -1,6 +1,6 @@
 const Filter = () => {
   return (
-    <div className="w-full w-56  mr-10 ml-10 bg-gray-200 flex flex-col items-center dark:bg-slate-400 rounded-lg p-2">
+    <div className="w-44 h-full  mr-10 ml-10 bg-gray-200 flex flex-col items-center dark:bg-slate-400 rounded-lg p-2">
       <h1 className="text-4xl mb-4 text-black dark:text-white">Filter</h1>
 
       <div className="flex flex-col items-center mb-6">
